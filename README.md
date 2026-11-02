@@ -1,4 +1,4 @@
-# consistency_controlled_comparison_042d2485
+# operator_fusion_payoff_ab_comparison
 
 （具身智能场景）算子融合的收益边界与下游任务表现的分数能否预测下游表现？用口径一致性比对量化预测力，并列出反例。
 
@@ -15,9 +15,9 @@
 仅依赖 Python 标准库。
 
 ```bash
-python consistency_controlled_comparison_042d2485.py --help
-python consistency_controlled_comparison_042d2485.py --input sample.txt
-python consistency_controlled_comparison_042d2485.py --input sample.txt --json
+python operator_fusion_payoff_ab_comparison.py --help
+python operator_fusion_payoff_ab_comparison.py --input sample.txt
+python operator_fusion_payoff_ab_comparison.py --input sample.txt --json
 ```
 
 输入文件按行解析。协议「对照实验」使用分隔符 `（无）` 区分标签与载荷。
@@ -50,7 +50,7 @@ python consistency_controlled_comparison_042d2485.py --input sample.txt --json
 ## 复现步骤
 
 1. 按上面的分隔符准备输入文件，每行一条样本；
-2. 运行 `python consistency_controlled_comparison_042d2485.py --input sample.txt --json`；
+2. 运行 `python operator_fusion_payoff_ab_comparison.py --input sample.txt --json`；
 3. 记录运行环境、输入文件与完整输出；
 4. **未运行的指标不要引用**：本仓库只提供测量方法与判定规则，
    不预填任何实测数字。填入实测值前请确认对应命令与输入一致。
